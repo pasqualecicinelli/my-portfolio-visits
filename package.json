@@ -1,0 +1,10 @@
+{
+  "name": "my-netlify-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
