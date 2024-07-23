@@ -132,7 +132,7 @@ async function updateVisitCounter() {
   const visitCounters = document.querySelectorAll(".visit-counter");
 
   try {
-    const response = await fetch("/functions/visit-counter");
+    const response = await fetch("./netlify/v1/functions/visit-counter");
     if (!response.ok) {
       throw new Error(
         "Errore nella risposta della funzione: " + response.statusText
