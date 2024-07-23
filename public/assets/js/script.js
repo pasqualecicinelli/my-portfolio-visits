@@ -128,27 +128,21 @@ function hidden(selectedLanguage) {
 }
 
 //Set Visit
-function updateVisitCounter() {
+async function updateVisitCounter() {
   const visitCounters = document.querySelectorAll(".visit-counter");
 
-  let visits = localStorage.getItem("visitCount") || 0;
+  try {
+    const response = await fetch("/.netlify/functions/visit-counter");
+    const data = await response.json();
+    const visits = data.visit_count;
 
-  // Converte il valore in un intero decimale
-  visits = parseInt(visits, 10);
-
-  // Controlla se l'utente ha già visitato il sito
-  let isFirstVisit = !localStorage.getItem("visited");
-
-  if (isFirstVisit) {
-    localStorage.setItem("visited", true);
-    visits++;
-    localStorage.setItem("visitCount", visits);
+    visitCounters.forEach((counter) => {
+      const counterValue = counter.querySelector(".counter-value");
+      animateCounter(counterValue, visits, 2000);
+    });
+  } catch (error) {
+    console.error("Errore nel recupero del contatore di visite:", error);
   }
-  // Aggiorno il valore del contatore con l'animazione
-  visitCounters.forEach((counter) => {
-    const counterValue = counter.querySelector(".counter-value");
-    animateCounter(counterValue, visits, 2000);
-  });
 }
 
 // Animate visit counter
