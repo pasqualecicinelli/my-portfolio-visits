@@ -133,6 +133,11 @@ async function updateVisitCounter() {
 
   try {
     const response = await fetch("/.netlify/functions/visit-counter");
+    if (!response.ok) {
+      throw new Error(
+        "Errore nella risposta della funzione: " + response.statusText
+      );
+    }
     const data = await response.json();
     const visits = data.visit_count;
 

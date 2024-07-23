@@ -1,49 +1,50 @@
-// functions/visit-counter.js
 const mysql = require("mysql");
 
-const connection = mysql.createConnection({
-  host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
-});
+exports.handler = async function (event, context) {
+  // Crea una nuova connessione per ogni richiesta
+  const connection = mysql.createConnection({
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE,
+  });
 
-exports.handler = (event, context, callback) => {
-  connection.connect();
-
-  connection.query(
-    "SELECT count FROM visits WHERE id = 1",
-    (error, results, fields) => {
-      if (error) {
-        connection.end();
-        return callback(null, {
+  // Avvolgi la connessione in una Promise per facilitare l'uso con async/await
+  return new Promise((resolve, reject) => {
+    // Connetti al database
+    connection.connect((err) => {
+      if (err) {
+        console.error("Errore di connessione al database:", err);
+        return reject({
           statusCode: 500,
-          body: JSON.stringify({ error: error.message }),
+          body: JSON.stringify({ error: "Errore di connessione al database" }),
         });
       }
 
-      let currentCount = results[0].count;
-      let newCount = currentCount + 1;
-
+      // Esegui la query
       connection.query(
-        "UPDATE visits SET count = ? WHERE id = 1",
-        [newCount],
-        (error, results, fields) => {
-          connection.end();
-
+        "SELECT count FROM visits WHERE id = 1",
+        (error, results) => {
           if (error) {
-            return callback(null, {
+            console.error("Errore nella query del database:", error);
+            connection.end(); // Assicurati di chiudere la connessione
+            return reject({
               statusCode: 500,
-              body: JSON.stringify({ error: error.message }),
+              body: JSON.stringify({
+                error: "Errore nella query del database",
+              }),
             });
           }
 
-          return callback(null, {
+          // Chiudi la connessione
+          connection.end();
+
+          resolve({
             statusCode: 200,
-            body: JSON.stringify({ count: newCount }),
+            body: JSON.stringify({ visit_count: results[0].count }),
           });
         }
       );
-    }
-  );
+    });
+  });
 };
