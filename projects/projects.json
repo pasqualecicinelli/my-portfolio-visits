@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Discord",
+    "desc": {
+      "it": "Clone di Discord uno dei primi progetti realizzati solo in Html e Css",
+      "en": "Clone of Discord, one of the first projects made using only Html and Css"
+    },
+    "image": "discord",
+    "category": "basicweb",
+    "links": {
+      "view": "https://pasqualecicinelli.github.io/htmlcss-discord/",
+      "code": "https://github.com/pasqualecicinelli/htmlcss-discord"
+    }
+  },
+  {
+    "name": "Boolando",
+    "desc": {
+      "it": "Copia di Zalando progetto realizzato in Html e Css, introducendo i primi effetti hover sulle immagini, sul cuore ed è anche responsive",
+      "en": "Copy of Zalando, a project made in Html and Css, introducing the first hover effects on images, hearts, and it is also responsive"
+    },
+    "image": "boolando",
+    "category": "basicweb",
+    "links": {
+      "view": "https://pasqualecicinelli.github.io/html-css-boolando/",
+      "code": "https://github.com/pasqualecicinelli/html-css-boolando"
+    }
+  },
+  {
+    "name": "Spotify web",
+    "desc": {
+      "it": "Spotify web è stato realizzato per adattarsi ai vari tipi di dispotivi ed inoltre con il passaggio del mouse troviamo vari effetti creati in Html e Css",
+      "en": "Spotify web has been created to adapt to various types of devices, and with mouse hover, various effects can be found created in Html and Css"
+    },
+    "image": "spotify",
+    "category": "basicweb",
+    "links": {
+      "view": "https://pasqualecicinelli.github.io/html-css-spotifyweb/",
+      "code": "https://github.com/pasqualecicinelli/html-css-spotifyweb"
+    }
+  },
+  {
+    "name": "Campo minato",
+    "desc": {
+      "it": "In Campo minato l'utente può scegliere i vari livelli di gioco, se clicca sulla bomba apparirà il punteggio stabilito, altrimenti riceverà le Congratulazioni",
+      "en": "In Minesweeper, the user can choose various game levels; if they click on the bomb, the established score will appear, otherwise he will have won"
+    },
+    "image": "campo-minato",
+    "category": "basicweb",
+    "links": {
+      "view": "https://campo-minato-dom.netlify.app/",
+      "code": "https://github.com/pasqualecicinelli/js-campominato-dom"
+    }
+  },
+  {
+    "name": "Portfolio",
+    "desc": {
+      "it": "Creato con Html, css, javascript e jquery, del tutto responsive e con tanti effetti grafici",
+      "en": "Created with Html, css, javascript, and jquery, entirely responsive and with many graphic effects"
+    },
+    "image": "Portfolio",
+    "category": "basicweb",
+    "links": {
+      "view": "https://pasqualecicinelli.github.io/my-portfolio/",
+      "code": "https://github.com/pasqualecicinelli/my-portfolio"
+    }
+  },
+  {
+    "name": "Lyricsmus jazz",
+    "desc": {
+      "it": "Uno dei primi progetti Jazz creati con vue.js e vite",
+      "en": "One of the first Jazz projects created with vue.js and vite"
+    },
+    "image": "Lyricsmus-jazz",
+    "category": "front-end",
+    "links": {
+      "view": "https://lyricsmus-jazz.netlify.app/",
+      "code": "https://github.com/pasqualecicinelli/proj-html-vuejs"
+    }
+  },
+  {
+    "name": "Boolflix",
+    "desc": {
+      "it": "La mia app emula Netflix, mostrando locandine in base alla ricerca dell'utente. Se non ci sono risultati, verrà visualizzato un messaggio",
+      "en": "My app emulates Netflix, displaying posters based on user search. If there are no matching results, a message will be displayed."
+    },
+    "image": "boolflix",
+    "category": "front-end",
+    "links": {
+      "view": "https://vite-boolflix.netlify.app/",
+      "code": "https://github.com/pasqualecicinelli/vite-boolflix"
+    }
+  },
+  {
+    "name": "Deliveboo Front-end",
+    "desc": {
+      "it": "Il frontend di Deliveboo permette ai clienti di esplorare, ordinare e pagare piatti da un unico ristorante. Realizzato con Vue.js e Braintree",
+      "en": "Deliveboo's frontend allows customers to easily browse, order, and pay for dishes from a single restaurant. Built with Vue.js and Braintree."
+    },
+    "image": "Deliveboo-frontend",
+    "category": "front-end",
+    "links": {
+      "view": "",
+      "code": "https://github.com/pasqualecicinelli/deliveboo-front-office"
+    }
+  },
+  {
+    "name": "Deliveboo Back-end",
+    "desc": {
+      "it": "Deliveboo per ristoratori offre gestione del menu, visibilità personalizzata dei piatti e controllo degli ordini, ottimizzato con tecnologie moderne",
+      "en": "Deliveboo for restaurateurs provides menu management, personalized dish visibility, and order control, optimized with modern technologies"
+    },
+    "image": "Deliveboo-backend",
+    "category": "back-end",
+    "links": {
+      "view": "",
+      "code": "https://github.com/pasqualecicinelli/deliveboo-back-office"
+    }
+  }
+]

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="../assets/images/favicon.png"
+      type="image/x-png"
+    />
+
+    <title>Progetti | Portfolio Pasquale Cicinelli</title>
+  </head>
+  <body oncontextmenu="return false">
+    <!-- pre loader -->
+    <div class="loader-container" id="loader-container">
+      <img draggable="false" src="../assets/images/preloader.gif" alt="" />
+    </div>
+    <!-- navbar starts -->
+    <header>
+      <a href="../" class="logo fav">
+        <img
+          class="logo-img"
+          src="../assets/images/favicon-pc.png"
+          alt="logo-name"
+        />
+        Pasquale
+      </a>
+
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li data-lang="it"><a href="../#about">Chi sono</a></li>
+          <li data-lang="en"><a href="../#about">About</a></li>
+          <li data-lang="it"><a href="../#skills">Abilità</a></li>
+          <li data-lang="en"><a href="../#skills">Skills</a></li>
+          <li data-lang="it"><a href="../#education">Formazione</a></li>
+          <li data-lang="en"><a href="../#education">Education</a></li>
+          <li data-lang="it"><a href="../#work">Progetti</a></li>
+          <li data-lang="en"><a href="../#work">Projects</a></li>
+          <li data-lang="it"><a href="../#experience">Esperienze</a></li>
+          <li data-lang="en"><a href="../#experience">Experience</a></li>
+          <li data-lang="it"><a href="../#contact">Contatti</a></li>
+          <li data-lang="en"><a href="../#contact">Contact</a></li>
+          <li class="dropdown">
+            <a class="nav-link"
+              ><span data-filter="en" data-lang="en">Language</span>
+              <span data-filter="it" data-lang="it">Lingua</span>
+              <i class="fas fa-chevron-down"></i
+            ></a>
+            <ul name="language" id="language">
+              <li>
+                <a data-filter="it" data-lang="en">Italiano</a>
+                <a data-filter="en" data-lang="it">English</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- work project section starts -->
+    <section class="work" id="work">
+      <h2 class="heading" data-lang="it">
+        <i class="fas fa-laptop-code"></i> Progetti
+        <span>Realizzati</span>
+      </h2>
+
+      <h2 class="heading" data-lang="en">
+        <i class="fas fa-laptop-code"></i> Projects <span>completed</span>
+      </h2>
+
+      <p class="quote" data-lang="it">
+        I progetti narrano la storia <span>di questo lungo percorso</span>
+      </p>
+      <p class="quote" data-lang="en">
+        Projects tell the story <span>of this long journey</span>
+      </p>
+
+      <div id="filters" class="button-group">
+        <button class="btn is-checked" data-lang="it" data-filter="*">
+          Tutti i progetti
+        </button>
+        <button class="btn is-checked" data-lang="en" data-filter="*">
+          All projects
+        </button>
+        <button class="btn" data-filter=".front-end">Front-end</button>
+        <button class="btn" data-filter=".back-end">Back-end</button>
+        <button class="btn" data-lang="it" data-filter=".basicweb">
+          Web di base
+        </button>
+        <button class="btn" data-lang="en" data-filter=".basicweb">
+          Basic Web
+        </button>
+        <!-- 
+         <button class="btn" data-filter=".android">Android App</button>
+      --></div>
+
+      <div class="box-container">
+        <!-- <div class="box tilt">
+      <img src="/assets/images/projects/agecalc.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      </div>
+
+      <div class="backbtn">
+        <a href="../#work" class="btn">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="it">Torna alla Home</span>
+          <span data-lang="en">Back Home</span>
+        </a>
+      </div>
+    </section>
+    <!-- work project section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3 data-lang="it">Portfolio Pasquale</h3>
+          <h3 data-lang="en">Pasquale's portfolio</h3>
+          <p data-lang="it">
+            Grazie per avere visitato il sito web del mio portfolio personale.
+            Connettiti con me sui social. <br />
+            <br />
+            Puoi anche connetterti 👨‍💻 con me inviando una e-mail 📬
+          </p>
+          <p data-lang="en">
+            Thank you for visiting my personal portfolio website. Connect with
+            me on social media. <br />
+            <br />
+            You can also get in touch 👨‍💻 by sending an email 📬
+          </p>
+        </div>
+
+        <div class="box">
+          <h3 data-lang="it">Link veloci</h3>
+          <h3 data-lang="en">Fast Link</h3>
+          <ul>
+            <li>
+              <a href="../#home"
+                ><i class="fas fa-chevron-circle-right"></i> Home</a
+              >
+            </li>
+            <li data-lang="it">
+              <a href="../#about"
+                ><i class="fas fa-chevron-circle-right"></i> Chi sono</a
+              >
+            </li>
+            <li data-lang="en">
+              <a href="../#about"
+                ><i class="fas fa-chevron-circle-right"></i> About</a
+              >
+            </li>
+            <li data-lang="it">
+              <a href="../#skills"
+                ><i class="fas fa-chevron-circle-right"></i> Abilità</a
+              >
+            </li>
+            <li data-lang="en">
+              <a href="../#skills"
+                ><i class="fas fa-chevron-circle-right"></i> Skills</a
+              >
+            </li>
+            <li data-lang="it">
+              <a href="../#education"
+                ><i class="fas fa-chevron-circle-right"></i> Formazione</a
+              >
+            </li>
+            <li data-lang="en">
+              <a href="../#education"
+                ><i class="fas fa-chevron-circle-right"></i> Education</a
+              >
+            </li>
+            <li data-lang="it">
+              <a href="../#work"
+                ><i class="fas fa-chevron-circle-right"></i> Progetti</a
+              >
+            </li>
+            <li data-lang="en">
+              <a href="../#work"
+                ><i class="fas fa-chevron-circle-right"></i> Projects</a
+              >
+            </li>
+            <li data-lang="it">
+              <a href="../#experience"
+                ><i class="fas fa-chevron-circle-right"></i> Esperienze</a
+              >
+            </li>
+            <li data-lang="en">
+              <a href="../#experience"
+                ><i class="fas fa-chevron-circle-right"></i> Experience</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3 data-lang="it">Informazioni di contatto</h3>
+          <h3 data-lang="en">Contact information</h3>
+          <p><i class="fas fa-phone"></i>+39 XXX-XXX-XXXX</p>
+          <p class="email">
+            <i class="fas fa-envelope"></i>pasquale.cicinelli89@gmail.com
+          </p>
+          <p data-lang="it">
+            <i class="fas fa-map-marked-alt"></i>Bari, Italia-70019
+          </p>
+          <p data-lang="en">
+            <i class="fas fa-map-marked-alt"></i>Bari, Italy-70019
+          </p>
+          <div class="share">
+            <a
+              href="https://www.linkedin.com/in/pasquale-cicinelli-64885b174/"
+              class="fab fa-linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/pasqualecicinelli"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:pasquale.cicinelli89@gmail.com"
+              class="fas fa-envelope"
+              aria-label="Mail"
+              target="_blank"
+            ></a>
+            <!--
+                <a href="https://twitter.com/pasquale_cicinelli" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+              -->
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        Copyright © 2024 <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.linkedin.com/in/pasquale-cicinelli-64885b174/">
+          Pasquale Cicinelli</a
+        >
+      </h1>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- scroll top btn -->
+    <a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- vanilla tilt.js links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- isotope filter plugin cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+[
+  {
+    "company": "Boolean",
+    "type": "Jr Full Stack Web Developer Trainee",
+    "desc": {
+      "it": "Corso della durata di 6 mesi dove ho appreso varie tecnologie sia lato front-end che back-end, costruendo siti web responsive, aggiungendo iterazioni alle pagine, interrogando database, creando applicazioni web. Lavorando sia in autonomia che anche in gruppo concludendo con un progetto finale",
+      "en": "A 6-month course where I learned various technologies both on the front-end and back-end, building responsive websites, adding interactions to pages, querying databases, and creating web applications. Working both independently and collaboratively, culminating in a final project"
+    },
+    "place": "",
+    "data": {
+      "it": "Giugno 2023 - Dicembre 2023",
+      "en": "June 2023 - December 2023"
+    },
+    "show": true
+  },
+  {
+    "company": "Desa trade srl",
+    "type": {
+      "it": "Impiegato",
+      "en": "employee"
+    },
+    "desc": {
+      "it": "Abile nell'interpretare le domande dei clienti, fornire informazioni chiare e registrare dati su banche dati e software gestionali. Conosco le specifiche d'uso degli apparati video-telefonici nei call center e le caratteristiche tecnico-commerciali del prodotto/servizio. Competente nell'uso dei browser internet",
+      "en": "Skilled in interpreting customer inquiries, providing clear information, and recording data on databases and management software. Familiar with the specifications of video-telephony devices in call centers and the technical-commercial features of the product/service. Proficient in using internet browsers"
+    },
+    "place": "Bari,",
+    "data": {
+      "it": "Febbraio 2018 - Giugno 2018",
+      "en": "February 2018 - June 2018"
+    },
+    "show": true
+  },
+  {
+    "company": "Clear lake citrus pty ltd",
+    "type": {
+      "it": "Addetto all’imballaggio",
+      "en": "Packaging Operator"
+    },
+    "desc": {
+      "it": "Avevo il compito di: selezionare, impacchettare e nella gestione di ordini di arance, meloni, angurie e zucche. Insegnandomi in codesta azienda anche a guidare il muletto",
+      "en": "I was tasked with selecting, packaging, and managing orders for oranges, melons, watermelons, and pumpkins. Additionally, this company taught me how to operate a forklift"
+    },
+    "place": "Australia,",
+    "data": {
+      "it": "Novembre 2015 - Marzo 2016",
+      "en": "November 2015 - March 2016"
+    },
+    "show": true
+  },
+  {
+    "company": "Protezione civile",
+    "type": {
+      "it": "Operatore di primo intervento",
+      "en": "First Responder Operator"
+    },
+    "desc": {
+      "it": "Ottime capacità organizzative acquisite durante la mia esperienza di volontariato nel gruppo della Protezione Civile ANPAS con la mansione di autista e operatore di primo intervento antincendio boschivo",
+      "en": "Excellent organizational skills acquired during my volunteer experience with the ANPAS Civil Protection group, where I served as a driver and first responder in wildland firefighting"
+    },
+    "place": "Cellamare (BA),",
+    "data": {
+      "it": "2009 - 2013",
+      "en": "2009 - 2013"
+    },
+    "show": true
+  },
+  {
+    "company": "Transcom",
+    "type": "Call center",
+    "desc": "",
+    "place": "Modugno (BA)",
+    "data": {
+      "it": "Marzo 2010 - Giugno 2010",
+      "en": "March 2010 - June 2010"
+    },
+    "show": false
+  }
+]
