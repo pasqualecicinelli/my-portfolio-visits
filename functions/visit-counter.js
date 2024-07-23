@@ -1,7 +1,7 @@
+// functions/visit-counter.js
 const mysql = require("mysql");
 
 exports.handler = async function (event, context) {
-  // Crea una nuova connessione per ogni richiesta
   const connection = mysql.createConnection({
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
@@ -9,9 +9,7 @@ exports.handler = async function (event, context) {
     database: process.env.MYSQL_DATABASE,
   });
 
-  // Avvolgi la connessione in una Promise per facilitare l'uso con async/await
   return new Promise((resolve, reject) => {
-    // Connetti al database
     connection.connect((err) => {
       if (err) {
         console.error("Errore di connessione al database:", err);
@@ -21,13 +19,12 @@ exports.handler = async function (event, context) {
         });
       }
 
-      // Esegui la query
       connection.query(
         "SELECT count FROM visits WHERE id = 1",
         (error, results) => {
           if (error) {
             console.error("Errore nella query del database:", error);
-            connection.end(); // Assicurati di chiudere la connessione
+            connection.end();
             return reject({
               statusCode: 500,
               body: JSON.stringify({
@@ -36,9 +33,7 @@ exports.handler = async function (event, context) {
             });
           }
 
-          // Chiudi la connessione
           connection.end();
-
           resolve({
             statusCode: 200,
             body: JSON.stringify({ visit_count: results[0].count }),
