@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Run the animation
   checkAnimation();
 
-  updateVisitCounter();
+  // updateVisitCounter();
 
   // Get the selected language from localStorage
   var selectedLanguage = localStorage.getItem("selectedLanguage");
@@ -128,27 +128,27 @@ function hidden(selectedLanguage) {
 }
 
 //Set Visit
-async function updateVisitCounter() {
-  const visitCounters = document.querySelectorAll(".visit-counter");
+// async function updateVisitCounter() {
+//   const visitCounters = document.querySelectorAll(".visit-counter");
 
-  try {
-    const response = await fetch("./netlify/v1/functions/visit-counter");
-    if (!response.ok) {
-      throw new Error(
-        "Errore nella risposta della funzione: " + response.statusText
-      );
-    }
-    const data = await response.json();
-    const visits = data.visit_count;
+//   try {
+//     const response = await fetch("/ .netlify/functions/visit-counter");
+//     if (!response.ok) {
+//       throw new Error(
+//         "Errore nella risposta della funzione: " + response.statusText
+//       );
+//     }
+//     const data = await response.json();
+//     const visits = data.visit_count;
 
-    visitCounters.forEach((counter) => {
-      const counterValue = counter.querySelector(".counter-value");
-      animateCounter(counterValue, visits, 2000);
-    });
-  } catch (error) {
-    console.error("Errore nel recupero del contatore di visite:", error);
-  }
-}
+//     visitCounters.forEach((counter) => {
+//       const counterValue = counter.querySelector(".counter-value");
+//       animateCounter(counterValue, visits, 2000);
+//     });
+//   } catch (error) {
+//     console.error("Errore nel recupero del contatore di visite:", error);
+//   }
+// }
 
 // Animate visit counter
 function animateCounter(element, finalValue, duration) {
