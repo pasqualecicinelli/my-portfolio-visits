@@ -22,37 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5X3VHWND6H"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-5X3VHWND6H");
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WTPF6H52");
-    </script>
-    <!-- End Google Tag Manager -->
-
+    <?php include 'counter.php'; ?>
     <!-- Favicon -->
     <link
       id="favicon"
@@ -62,18 +32,8 @@
     />
     <title>Portfolio | Pasquale Cicinelli</title>
   </head>
-  <body oncontextmenu="return false">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WTPF6H52"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
+  <body oncontextmenu="return false">
     <!-- pre loader -->
     <div class="loader-container" id="loader-container">
       <img draggable="false" src="./assets/images/preloader.gif" alt="" />
@@ -171,11 +131,13 @@
           </ul>
         </div>
         <p class="visit-counter" data-lang="it">
-          Visite al portfolio: <span class="counter-value">0</span>
+          Visite al portfolio:
+          <span class="counter-value"><?php echo $total_visit; ?></span>
         </p>
 
         <p class="visit-counter" data-lang="en">
-          Portfolio visits: <span class="counter-value">0</span>
+          Portfolio visits:
+          <span class="counter-value"><?php echo $total_visit; ?></span>
         </p>
       </div>
       <div class="image">

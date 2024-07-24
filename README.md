@@ -28,10 +28,3 @@ If you want to contact me, you can reach me through below handles.
 © 2024 Pasquale Cicinelli
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-
-<!-- Google Analytics
- NOME STREAM: portfolio-visits
-URL DELLO STREAM: https://pasqualecicinelli.github.io/my-portfolio-visits/
-ID STREAM: 8499870221
-ID MISURAZIONE: G-5X3VHWND6H
--->
