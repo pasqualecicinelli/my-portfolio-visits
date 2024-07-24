@@ -1,13 +1,13 @@
 <?php
 $host = 'https://pasqualecicinelli.github.io/my-portfolio-visits/'; // o l'indirizzo del tuo server MySQL
 $dbname = 'visit_counter_db';
-// $username = 'your_username';
-// $password = 'your_password';
+$username = 'root';
+$password = 'root';
 
 // Connessione al database
 $pdo = new PDO(
     "mysql:host=$host;dbname=$dbname",
-    //  $username, $password
+     $username, $password
 );
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
