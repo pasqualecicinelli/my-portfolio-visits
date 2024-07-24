@@ -1,5 +1,5 @@
 <?php
-$host = 'https://pasqualecicinelli.github.io/my-portfolio-visits/'; // o l'indirizzo del tuo server MySQL
+$host = 'pasqualecicinelli.github.io/my-portfolio-visits/'; // o l'indirizzo del tuo server MySQL
 $dbname = 'single-visit';
 $username = 'root';
 $password = 'root';
